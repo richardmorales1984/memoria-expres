@@ -1,0 +1,16 @@
+ {
+  "name": "Memoria Exprés",
+  "short_name": "Memoria",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#888888",
+  "orientation": "portrait",
+  "categories": ["games","fun"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]

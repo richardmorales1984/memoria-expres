@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Memoria Exprés</title>
+</head>
+<body>
+  <h1>Memoria Exprés</h1>
+  <p>Tiempo: <span id="timer">00:00</span> | Mejor: <span id="bestTime">--:--</span></p>
+  <div class="grid" id="gameBoard"></div>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js')
+	  .then(()=> console.log("Service worker registrado"))
+	  .catch((error)=>console.log("Service worker fallido", error));
+    }
+  </script>
+</body>
+</html>
